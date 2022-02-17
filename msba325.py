@@ -141,7 +141,7 @@ import io
 # Downloading the csv file from your GitHub account
 
 url = "https://github.com/sarard2/kiki/blob/main/US.csv" # Make sure the url is the raw version of the file on GitHub
-download = requests.get(url).content
+download =get(url).content
 
 # Reading the downloaded content and turning it into a pandas dataframe
 
@@ -149,7 +149,7 @@ df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 
 #Visualizations related to me
 urll="https://github.com/sarard2/kiki/blob/main/NY.csv"
-downloadd=requests.get(urll).content
+downloadd=get(urll).content
 df1=pd.read_csv(io.StringIO(downloadd.decode('utf-8')))
 
 #to plot average prices among room types
