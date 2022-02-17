@@ -134,9 +134,23 @@ st.plotly_chart(fig3, use_container_width=True)
 
 st.markdown("The second section includes the visuzalations of airbnb dataset ")
 
+
+#trying to read csv 
+import io
+    
+# Downloading the csv file from your GitHub account
+
+url = "https://github.com/sarard2/kiki/blob/main/US.csv" # Make sure the url is the raw version of the file on GitHub
+download = requests.get(url).content
+
+# Reading the downloaded content and turning it into a pandas dataframe
+
+df = pd.read_csv(io.StringIO(download.decode('utf-8')))
+
 #Visualizations related to me
-df=pd.read_csv(r"C:\Users\Sara\Desktop\US.csv")
-df1=pd.read_csv(r"C:\Users\Sara\Desktop\NY.csv")
+urll="https://github.com/sarard2/kiki/blob/main/NY.csv"
+downloadd=requests.get(urll).content
+df1=pd.read_csv(io.StringIO(downloadd.decode('utf-8')))
 
 #to plot average prices among room types
 df1private=df1.groupby("room_type").mean("price")
