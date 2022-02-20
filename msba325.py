@@ -16,7 +16,8 @@ st.title("MSBA 325 Assignment")
 st.header("Sara Ramadan")
 st.image("https://www.aub.edu.lb/osb/UndergradProgram/Undergrad%20Rotator/Bldg1.jpg")
 st.markdown("The following section includes the visualizations of the tutorials previously submitted")
-st.button("Part One")
+if(st.button("Press me")):
+            st.text("Welcome to part one of my assignment")
 
 trial = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/school_earnings.csv")
 
@@ -142,7 +143,8 @@ st.markdown("The second section includes the visuzalations of airbnb dataset ")
 df=pd.read_csv("https://raw.githubusercontent.com/sarard2/kiki/main/US.csv")
 df1=pd.read_csv("https://raw.githubusercontent.com/sarard2/kiki/main/NY.csv")
 
-st.button("Part Two")
+if(st.button("Press me")):
+            st.text("Welcome to part two of my assignment")
 #Visualizations related to me
 
 #to plot average prices among room types
