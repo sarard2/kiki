@@ -15,10 +15,10 @@ import plotly.express as px
 st.title("MSBA 325 Assignment")
 st.header("Sara Ramadan")
 st.image("https://www.aub.edu.lb/osb/UndergradProgram/Undergrad%20Rotator/Bldg1.jpg")
-color = st.color_picker('Warmup, Kindly Pick a Color', '#00f900')
+color = st.color_picker('Warmup: Kindly Pick a Color', '#00f900')
 st.write('The current color is', color)
 
-st.markdown("The following section includes the visualizations of the tutorials previously submitted")
+st.subheader("Visualizations of the Previous Tutorials")
 if(st.button("Press me")):
             st.text("Welcome to part one of my assignment")
 
