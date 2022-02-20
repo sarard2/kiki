@@ -1,4 +1,4 @@
-import streamlit as st
+rimport streamlit as st
 import pandas as pd
 import seaborn as sns
 import numpy as np
@@ -15,6 +15,9 @@ import plotly.express as px
 st.title("MSBA 325 Assignment")
 st.header("Sara Ramadan")
 st.image("https://www.aub.edu.lb/osb/UndergradProgram/Undergrad%20Rotator/Bldg1.jpg")
+color = st.color_picker('Pick A Color', '#00f900')
+st.write('The current color is', color)
+
 st.markdown("The following section includes the visualizations of the tutorials previously submitted")
 if(st.button("Press me")):
             st.text("Welcome to part one of my assignment")
@@ -143,7 +146,7 @@ st.markdown("The second section includes the visuzalations of airbnb dataset ")
 df=pd.read_csv("https://raw.githubusercontent.com/sarard2/kiki/main/US.csv")
 df1=pd.read_csv("https://raw.githubusercontent.com/sarard2/kiki/main/NY.csv")
 
-if(st.button("Press me")):
+if(st.button("Press Here")):
             st.text("Welcome to part two of my assignment")
 #Visualizations related to me
 
